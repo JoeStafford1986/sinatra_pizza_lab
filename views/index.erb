@@ -1,4 +1,4 @@
-<p>All the pizzas!!!</p>
+<h3>Current Pizza Orders: <%= @orders.count  %></h3>
 <hr/>
 <% for order in @orders %>
   <p>Name: <%= order.pretty_name() %></p>

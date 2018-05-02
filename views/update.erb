@@ -13,6 +13,12 @@
       <% if @order_to_update.topping != "Calzone"%>
         <option value="Calzone">Calzone</option>
       <% end %>
+      <% if @order_to_update.topping != "Pepperoni"%>
+        <option value="Pepperoni">Pepperoni</option>
+      <% end %>
+      <% if @order_to_update.topping != "Italian Sausage"%>
+        <option value="Italian Sausage">Italian Sausage</option>
+      <% end %>
     </select>
   <label for="quantity">Quantity:</label>
     <input type="number" name="quantity" id="quantity" value="<%= @order_to_update.quantity %>">
