@@ -14,7 +14,9 @@
   <%= yield %>
   <ul>
     <li>
-      <a href="/pizza_orders/new">New Pizza Order</a>
+      <form method="get" action="/pizza_orders/new">
+        <input type="submit" value="Enter New Order">
+      </form>
     </li>
   </ul>
 </body>

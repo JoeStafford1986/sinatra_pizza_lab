@@ -24,7 +24,7 @@ end
 post '/pizza_orders' do
   @order = PizzaOrder.new(params)
   @order.save()
-  erb( :create )
+  redirect '/pizza_orders'
 end
 
 # SHOW order
